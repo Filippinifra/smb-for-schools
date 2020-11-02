@@ -18,6 +18,7 @@ export const MenuItem = styled.div`
   font-family: ${FIRST_FONT};
   color: ${FOURTH_COLOR};
   padding: 0 20px;
+  cursor: pointer;
 
   text-shadow: -1px 0 ${SECOND_COLOR}, 0 1px ${SECOND_COLOR},
     1px 0 ${SECOND_COLOR}, 0 -1px ${SECOND_COLOR};

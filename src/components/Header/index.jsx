@@ -24,7 +24,11 @@ export const Header = () => {
     <HeaderWrapper>
       <div
         onClick={scrollToTop}
-        style={{ alignItems: "center", justifyContent: "center" }}
+        style={{
+          alignItems: "center",
+          justifyContent: "center",
+          cursor: "pointer",
+        }}
       >
         <Title>SMB</Title>
         <SubTitle>FOR SCHOOLS</SubTitle>
