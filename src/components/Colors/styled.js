@@ -14,9 +14,9 @@ export const ExternalWrapper = styled.div`
 export const Title = styled.div`
   font-family: ${FIRST_FONT};
   color: ${FOURTH_COLOR};
-  font-size: 45px;
-  padding: ${({ isMobile }) => (isMobile ? "0 20px" : "0 90px 0 50px")};
-  text-align: right;
+  font-size: ${({ isMobile }) => (isMobile ? "40px" : "45px")};
+  padding: ${({ isMobile }) => (isMobile ? "10px 0px 0 20px" : "0 90px 0 0")};
+  text-align: ${({ isMobile }) => (isMobile ? "left" : "right")};
 `;
 
 export const Text = styled.div`
