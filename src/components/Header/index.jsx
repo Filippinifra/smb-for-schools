@@ -34,11 +34,13 @@ export const Header = () => {
         <SubTitle>FOR SCHOOLS</SubTitle>
       </div>
       <RightWrapper>
-        <MenuItem onClick={() => handleMenuClick("about")}>
+        <MenuItem onClick={() => handleMenuClick("whatWeDo")}>
           COSA FACCIAMO
         </MenuItem>
-        <MenuItem>I NOSTRI LAVORI</MenuItem>
-        <MenuItem>ABOUT US</MenuItem>
+        <MenuItem onClick={() => handleMenuClick("products")}>
+          I NOSTRI LAVORI
+        </MenuItem>
+        <MenuItem onClick={() => handleMenuClick("about")}>ABOUT US</MenuItem>
         <MenuItem>CONTATTI</MenuItem>
       </RightWrapper>
     </HeaderWrapper>

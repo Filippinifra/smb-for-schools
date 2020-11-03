@@ -4,7 +4,7 @@ import { useMediaQuery } from "react-responsive";
 
 import TshirtColorImage from "images/tshirtMultiColor.png";
 import { ExternalWrapper, Title, Text } from "./styled";
-import { useStaggered } from "components/Staggered";
+import { useStaggered } from "hooks/useStaggered";
 
 export const Colors = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
