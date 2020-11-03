@@ -1,4 +1,4 @@
-import { FIRST_FONT } from "constants/font";
+import { FIRST_FONT, SECOND_FONT } from "constants/font";
 import { FIRST_COLOR, FOURTH_COLOR } from "constants/palette";
 import styled from "styled-components";
 

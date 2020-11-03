@@ -14,7 +14,7 @@ export const Stamp = () => {
     <ExternalWrapper isMobile={isMobile}>
       <MidWrapper isMobile={isMobile}>
         <Title>STAMPA</Title>
-        <Text style={{ marginBottom: 50 }}>{LABELS.graphics}</Text>
+        <Text style={{ marginBottom: 50 }}>{LABELS.print1}</Text>
         <img
           alt="print"
           src={Print}
@@ -29,7 +29,7 @@ export const Stamp = () => {
           style={{ width: "100%", marginBottom: 50 }}
         />
         <Text style={{ paddingBottom: 50 }} s>
-          {LABELS.graphics}
+          {LABELS.print1}
         </Text>
       </MidWrapper>
     </ExternalWrapper>

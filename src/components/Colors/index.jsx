@@ -14,7 +14,7 @@ export const Colors = () => {
   return (
     <ExternalWrapper>
       <Title isMobile={isMobile}>PRODOTTI E COLORI</Title>
-      <Text isMobile={isMobile}>{LABELS.productsAndColors}</Text>
+      <Text isMobile={isMobile}>{LABELS.products}</Text>
       <div style={{ width: "80vw", height }}>
         <img
           alt="polaroid"

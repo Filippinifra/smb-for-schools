@@ -25,7 +25,7 @@ export const WhatWeDo = () => {
             width: isMobile ? "auto" : "65%",
           }}
         >
-          {LABELS.smbForSchools}
+          {LABELS.whatWeDo}
         </Text>
         <div
           style={{
