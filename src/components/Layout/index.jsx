@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FIRST_COLOR,
   FOURTH_COLOR,
@@ -17,7 +17,12 @@ import { Products } from "components/Products";
 import { Element } from "react-scroll";
 import { About } from "components/About";
 
+import { animateScroll as scroll } from "react-scroll";
+
 export const Layout = () => {
+  useEffect(() => {
+    scroll.scrollTo(1);
+  }, []);
   return (
     <>
       <div style={{ position: "fixed", width: "100%", top: 0, zIndex: 10 }}>

@@ -3,9 +3,8 @@ import { useMediaQuery } from "react-responsive";
 
 import Products1 from "images/products1.png";
 import Products2 from "images/products2.png";
-import { ExternalWrapper, Title, Text } from "./styled";
+import { ExternalWrapper, Title } from "./styled";
 import { useStaggered } from "hooks/useStaggered";
-import { LABELS } from "constants/labels";
 
 export const Products = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
