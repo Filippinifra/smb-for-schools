@@ -1,5 +1,5 @@
 import { FIRST_FONT, SECOND_FONT } from "constants/font";
-import { FIRST_COLOR, FOURTH_COLOR, SECOND_COLOR } from "constants/palette";
+import { FIRST_COLOR, FOURTH_COLOR } from "constants/palette";
 import styled from "styled-components";
 
 export const ExternalWrapper = styled.div`
@@ -9,7 +9,6 @@ export const ExternalWrapper = styled.div`
   position: relative;
   margin-top: -1px;
   margin-bottom: -1px;
-  padding-top: 60px;
 `;
 
 export const Title = styled.div`
@@ -17,7 +16,6 @@ export const Title = styled.div`
   color: ${FOURTH_COLOR};
   font-size: 45px;
   padding: ${({ isMobile }) => (isMobile ? "0 20px" : "0 50px")};
-  margin: 50px 0;
 `;
 
 export const Text = styled.div`
@@ -25,21 +23,4 @@ export const Text = styled.div`
   color: ${FOURTH_COLOR};
   font-size: 20px;
   padding: ${({ isMobile }) => (isMobile ? "0 20px" : "0 50px")};
-  margin: 50px 0;
-`;
-
-export const ContactItem = styled.div`
-  font-family: ${FIRST_FONT};
-  color: ${FOURTH_COLOR};
-  font-size: 14px;
-`;
-
-export const InfoWrapper = styled.div`
-  width: 100%;
-  background-color: ${SECOND_COLOR};
-  border-radius: 50%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
