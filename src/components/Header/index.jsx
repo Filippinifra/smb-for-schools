@@ -41,7 +41,9 @@ export const Header = () => {
           I NOSTRI LAVORI
         </MenuItem>
         <MenuItem onClick={() => handleMenuClick("about")}>ABOUT US</MenuItem>
-        <MenuItem>CONTATTI</MenuItem>
+        <MenuItem onClick={() => handleMenuClick("contacts")}>
+          CONTATTI
+        </MenuItem>
       </RightWrapper>
     </HeaderWrapper>
   );

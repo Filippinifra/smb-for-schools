@@ -10,8 +10,8 @@ import {
   ContactItem,
   InfoWrapper,
 } from "./styled";
-import { FIRST_COLOR, FOURTH_COLOR, SECOND_COLOR } from "constants/palette";
 import { useGetWidth } from "hooks/useGetWidth";
+import { Element } from "react-scroll";
 
 export const About = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
@@ -25,8 +25,8 @@ export const About = () => {
       ref={ref}
       style={{ height: width, maxWidth: 500, maxHeight: 500 }}
     >
-      <div>
-        <Title style={{ fontSize: 20, margin: "0 0 20px 0" }}>CONTATTI</Title>
+      <Element name="contacts">
+        <Title style={{ fontSize: 30, margin: "0 0 20px 0" }}>CONTATTI</Title>
         <ContactItem>+39 342 7636758 ALBERTO</ContactItem>
         <ContactItem>SAINTMARYBOULEVARD@GMAIL.COM</ContactItem>
         <ContactItem>@SMB.FOR.SCHOOLS</ContactItem>
@@ -35,7 +35,7 @@ export const About = () => {
         </ContactItem>
         <ContactItem>P.IVA 04477820239</ContactItem>
         <ContactItem>SINCE 2015, VERONA</ContactItem>
-      </div>
+      </Element>
     </InfoWrapper>
   );
 
@@ -47,7 +47,7 @@ export const About = () => {
       College in Virginia, looked up one of the more obscure Latin words,
       consectetur, from a Lorem Ipsum passage, and going through the cites of
       the word in classical literature, discovered the undoubtable source. Lorem
-      Ipsum comes from sections
+      Ipsum comes from sections Contrary to popular belief,
     </Text>
   );
 
@@ -80,6 +80,7 @@ export const About = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              marginBottom: 40,
             }}
           >
             <div style={{ width: "65%" }}>
@@ -101,7 +102,12 @@ export const About = () => {
           </div>
         </>
       ) : (
-        <div style={{ display: "flex" }}>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
           <div style={{ width: "40%" }}>
             <Description />
           </div>

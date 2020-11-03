@@ -9,7 +9,7 @@ export const ExternalWrapper = styled.div`
   position: relative;
   margin-top: -1px;
   margin-bottom: -1px;
-  padding-top: 60px;
+  padding-top: 30px;
 `;
 
 export const Title = styled.div`
@@ -18,5 +18,5 @@ export const Title = styled.div`
   color: ${FIRST_COLOR};
   font-size: 45px;
   padding: ${({ isMobile }) => (isMobile ? "0 20px" : "0 50px")};
-  margin: 50px 0;
+  margin-bottom: 50px;
 `;

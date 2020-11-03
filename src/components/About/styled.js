@@ -9,15 +9,15 @@ export const ExternalWrapper = styled.div`
   position: relative;
   margin-top: -1px;
   margin-bottom: -1px;
-  padding-top: 60px;
+  padding-bottom: 50px;
 `;
 
 export const Title = styled.div`
   font-family: ${FIRST_FONT};
   color: ${FOURTH_COLOR};
   font-size: 45px;
-  padding: ${({ isMobile }) => (isMobile ? "0 20px" : "0 50px")};
-  margin: 50px 0;
+  padding: ${({ isMobile }) => (isMobile ? "40px 20px 0" : "0 50px")};
+  margin: 0 0 30px 0;
 `;
 
 export const Text = styled.div`
@@ -25,13 +25,12 @@ export const Text = styled.div`
   color: ${FOURTH_COLOR};
   font-size: 20px;
   padding: ${({ isMobile }) => (isMobile ? "0 20px" : "0 50px")};
-  margin: 50px 0;
 `;
 
 export const ContactItem = styled.div`
   font-family: ${FIRST_FONT};
   color: ${FOURTH_COLOR};
-  font-size: 14px;
+  font-size: 20px;
 `;
 
 export const InfoWrapper = styled.div`
