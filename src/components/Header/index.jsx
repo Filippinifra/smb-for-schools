@@ -8,6 +8,7 @@ import {
 } from "./styled";
 
 import { scroller, animateScroll as scroll } from "react-scroll";
+import { MaxWidthContent } from "components/MaxWidthContent";
 
 export const Header = () => {
   const handleMenuClick = (idElement) =>
@@ -22,29 +23,37 @@ export const Header = () => {
 
   return (
     <HeaderWrapper>
-      <div
-        onClick={scrollToTop}
+      <MaxWidthContent
         style={{
+          display: "flex",
+          justifyContent: "space-between",
           alignItems: "center",
-          justifyContent: "center",
-          cursor: "pointer",
         }}
       >
-        <Title>SMB</Title>
-        <SubTitle>FOR SCHOOLS</SubTitle>
-      </div>
-      <RightWrapper>
-        <MenuItem onClick={() => handleMenuClick("whatWeDo")}>
-          COSA FACCIAMO
-        </MenuItem>
-        <MenuItem onClick={() => handleMenuClick("products")}>
-          I NOSTRI LAVORI
-        </MenuItem>
-        <MenuItem onClick={() => handleMenuClick("about")}>ABOUT US</MenuItem>
-        <MenuItem onClick={() => handleMenuClick("contacts")}>
-          CONTATTI
-        </MenuItem>
-      </RightWrapper>
+        <div
+          onClick={scrollToTop}
+          style={{
+            alignItems: "center",
+            justifyContent: "center",
+            cursor: "pointer",
+          }}
+        >
+          <Title>SMB</Title>
+          <SubTitle>FOR SCHOOLS</SubTitle>
+        </div>
+        <RightWrapper>
+          <MenuItem onClick={() => handleMenuClick("whatWeDo")}>
+            COSA FACCIAMO
+          </MenuItem>
+          <MenuItem onClick={() => handleMenuClick("products")}>
+            I NOSTRI LAVORI
+          </MenuItem>
+          <MenuItem onClick={() => handleMenuClick("about")}>ABOUT US</MenuItem>
+          <MenuItem onClick={() => handleMenuClick("contacts")}>
+            CONTATTI
+          </MenuItem>
+        </RightWrapper>
+      </MaxWidthContent>
     </HeaderWrapper>
   );
 };

@@ -5,9 +5,6 @@ import { FIRST_FONT } from "constants/font";
 
 export const HeaderWrapper = styled.div`
   padding: 10px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @media only screen and (max-width: 650px) {
     padding: 10px 10px;

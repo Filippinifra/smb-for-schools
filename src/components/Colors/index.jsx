@@ -5,6 +5,7 @@ import { useMediaQuery } from "react-responsive";
 import TshirtColorImage from "images/tshirtMultiColor.png";
 import { ExternalWrapper, Title, Text } from "./styled";
 import { useStaggered } from "hooks/useStaggered";
+import { MaxWidthContent } from "components/MaxWidthContent";
 
 export const Colors = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
@@ -13,16 +14,18 @@ export const Colors = () => {
 
   return (
     <ExternalWrapper>
-      <Title isMobile={isMobile}>PRODOTTI E COLORI</Title>
-      <Text isMobile={isMobile}>{LABELS.products}</Text>
-      <div style={{ width: "80vw", height }}>
-        <img
-          alt="polaroid"
-          src={TshirtColorImage}
-          style={{ width: "100vw" }}
-          ref={ref}
-        />
-      </div>
+      <MaxWidthContent>
+        <Title isMobile={isMobile}>PRODOTTI E COLORI</Title>
+        <Text isMobile={isMobile}>{LABELS.products}</Text>
+        <div style={{ width: "90%", height, margin: "auto" }}>
+          <img
+            alt="t-shirt-color-image"
+            src={TshirtColorImage}
+            style={{ width: "100%" }}
+            ref={ref}
+          />
+        </div>
+      </MaxWidthContent>
     </ExternalWrapper>
   );
 };

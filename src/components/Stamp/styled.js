@@ -9,7 +9,6 @@ export const ExternalWrapper = styled.div`
   position: relative;
   margin-top: -1px;
   margin-bottom: -1px;
-  display: ${({ isMobile }) => (isMobile ? "block" : "flex")};
 `;
 
 export const Title = styled.div`

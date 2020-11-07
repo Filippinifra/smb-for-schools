@@ -4,17 +4,20 @@ import { useMediaQuery } from "react-responsive";
 
 import Logos from "images/logos.png";
 import { ExternalWrapper, Title, Text } from "./styled";
+import { MaxWidthContent } from "components/MaxWidthContent";
 
 export const Graphics = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
 
   return (
     <ExternalWrapper>
-      <Title isMobile={isMobile}>GRAFICHE</Title>
-      <Text isMobile={isMobile}>{LABELS.graphics}</Text>
-      <div style={{ width: "80vw", zIndex: 2 }}>
-        <img alt="polaroid" src={Logos} style={{ width: "100vw" }} />
-      </div>
+      <MaxWidthContent>
+        <Title isMobile={isMobile}>GRAFICHE</Title>
+        <Text isMobile={isMobile}>{LABELS.graphics}</Text>
+        <div style={{ width: "90%", zIndex: 2, margin: "auto" }}>
+          <img alt="logos" src={Logos} style={{ width: "100%" }} />
+        </div>
+      </MaxWidthContent>
     </ExternalWrapper>
   );
 };
