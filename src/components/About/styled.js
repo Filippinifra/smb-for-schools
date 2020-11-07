@@ -48,6 +48,6 @@ export const WrapperLogosTablet = styled.div`
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
