@@ -3,11 +3,14 @@ import { Layout } from "./components/Layout";
 
 import "./styles.css";
 import GlobalStyle from "./styled.js";
+import { Loader } from "components/Loader";
 
 const App = () => (
   <>
     <GlobalStyle />
-    <Layout />
+    <Loader>
+      <Layout />
+    </Loader>
   </>
 );
 
