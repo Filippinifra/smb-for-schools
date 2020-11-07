@@ -42,3 +42,12 @@ export const InfoWrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const WrapperLogosTablet = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+`;

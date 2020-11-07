@@ -9,6 +9,7 @@ import {
   Text,
   ContactItem,
   InfoWrapper,
+  WrapperLogosTablet,
 } from "./styled";
 import { useGetWidth } from "hooks/useGetWidth";
 import { Element } from "react-scroll";
@@ -128,9 +129,9 @@ export const About = () => {
               <div style={{ width: "65%" }}>
                 <Description />
               </div>
-              <div style={{ width: "35%" }}>
+              <WrapperLogosTablet style={{ width: "35%" }}>
                 <ImagesColumn />
-              </div>
+              </WrapperLogosTablet>
             </div>
             <div
               style={{
