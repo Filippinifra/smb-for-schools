@@ -14,6 +14,7 @@ import { useGetWidth } from "hooks/useGetWidth";
 import { Element } from "react-scroll";
 import { LABELS } from "constants/labels";
 import { MaxWidthContent } from "components/MaxWidthContent";
+import { FOURTH_COLOR } from "constants/palette";
 
 export const About = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
@@ -29,11 +30,59 @@ export const About = () => {
     >
       <Element name="contacts">
         <Title style={{ fontSize: 30, margin: "0 0 20px 0" }}>CONTATTI</Title>
-        <ContactItem>+39 342 7636758 ALBERTO</ContactItem>
-        <ContactItem>SAINTMARYBOULEVARD@GMAIL.COM</ContactItem>
-        <ContactItem>@SMB.FOR.SCHOOLS</ContactItem>
+        <ContactItem>
+          <a
+            style={{
+              all: "unset",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+            href="tel:+39 342 7636758"
+          >
+            +39 342 7636758 ALBERTO
+          </a>
+        </ContactItem>
+        <ContactItem>
+          <a
+            style={{
+              all: "unset",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+            href="mailto:saintmaryboulevard@gmail.com?subject=Richiesta"
+          >
+            SAINTMARYBOULEVARD@GMAIL.COM
+          </a>
+        </ContactItem>
+        <ContactItem>
+          <a
+            style={{
+              all: "unset",
+              textDecoration: "underline",
+              cursor: "pointer",
+              color: FOURTH_COLOR,
+            }}
+            href="https://www.instagram.com/smb.for.schools/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @SMB.FOR.SCHOOLS
+          </a>
+        </ContactItem>
         <ContactItem style={{ marginBottom: 20 }}>
-          @SAINT.MARY.BOULEVARD
+          <a
+            style={{
+              all: "unset",
+              textDecoration: "underline",
+              cursor: "pointer",
+              color: FOURTH_COLOR,
+            }}
+            href="https://www.instagram.com/saint.mary.boulevard/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            @SAINT.MARY.BOULEVARD
+          </a>
         </ContactItem>
         <ContactItem>P.IVA 04477820239</ContactItem>
         <ContactItem>SINCE 2015, VERONA</ContactItem>
