@@ -7,7 +7,7 @@ export const ContainerLoader = Styled.div`
     bottom:0;
     left:0;
     right:0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: ${FIRST_COLOR};
     display: flex;

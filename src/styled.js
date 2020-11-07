@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     body {
         margin: 0;
         font-family: ${SECOND_FONT}, sans-serif;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         font-style: normal;
         font-weight: 400;
