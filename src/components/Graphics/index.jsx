@@ -14,7 +14,13 @@ export const Graphics = () => {
       <MaxWidthContent>
         <Title isMobile={isMobile}>GRAFICHE</Title>
         <Text isMobile={isMobile}>{LABELS.graphics}</Text>
-        <div style={{ width: "90%", zIndex: 2, margin: "auto" }}>
+        <div
+          style={{
+            width: isMobile ? "100%" : "90%",
+            zIndex: 2,
+            margin: "auto",
+          }}
+        >
           <img alt="logos" src={Logos} style={{ width: "100%" }} />
         </div>
       </MaxWidthContent>

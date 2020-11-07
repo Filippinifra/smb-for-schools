@@ -17,9 +17,11 @@ export const Colors = () => {
       <MaxWidthContent>
         <Title isMobile={isMobile}>PRODOTTI E COLORI</Title>
         <Text isMobile={isMobile}>{LABELS.products}</Text>
-        <div style={{ width: "90%", height, margin: "auto" }}>
+        <div
+          style={{ width: isMobile ? "100%" : "90%", height, margin: "auto" }}
+        >
           <img
-            alt="t-shirt-color-image"
+            alt="t-shirt-color"
             src={TshirtColorImage}
             style={{ width: "100%" }}
             ref={ref}

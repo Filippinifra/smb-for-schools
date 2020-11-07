@@ -40,7 +40,9 @@ export const WhatWeDo = () => {
             <Slideshow />
           </div>
         </div>
-        <div style={{ width: "90%", height, margin: "auto" }}>
+        <div
+          style={{ width: isMobile ? "100%" : "90%", height, margin: "auto" }}
+        >
           <img
             alt="polaroid"
             src={Polaroid}
