@@ -24,6 +24,26 @@ export const About = () => {
 
   const { ref, width } = useGetWidth();
 
+  const ContactItemWithTag = ({ href, label, target, rel }) => (
+    <ContactItem>
+      <a
+        style={{
+          all: "unset",
+          borderBottom: `2px solid ${FOURTH_COLOR}`,
+          display: "inline-block",
+          lineHeight: 0.85,
+          cursor: "pointer",
+          color: FOURTH_COLOR,
+        }}
+        href={href}
+        target={target}
+        rel={rel}
+      >
+        {label}
+      </a>
+    </ContactItem>
+  );
+
   const CircleInfo = () => (
     <InfoWrapper
       ref={ref}
@@ -31,61 +51,27 @@ export const About = () => {
     >
       <Element name="contacts">
         <Title style={{ fontSize: 30, margin: "0 0 20px 0" }}>CONTATTI</Title>
-        <ContactItem>
-          <a
-            style={{
-              all: "unset",
-              textDecoration: "underline",
-              cursor: "pointer",
-            }}
-            href="tel:+39 342 7636758"
-          >
-            +39 342 7636758 ALBERTO
-          </a>
-        </ContactItem>
-        <ContactItem>
-          <a
-            style={{
-              all: "unset",
-              textDecoration: "underline",
-              cursor: "pointer",
-            }}
-            href="mailto:saintmaryboulevard@gmail.com?subject=Richiesta"
-          >
-            SAINTMARYBOULEVARD@GMAIL.COM
-          </a>
-        </ContactItem>
-        <ContactItem>
-          <a
-            style={{
-              all: "unset",
-              textDecoration: "underline",
-              cursor: "pointer",
-              color: FOURTH_COLOR,
-            }}
-            href="https://www.instagram.com/smb.for.schools/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            @SMB.FOR.SCHOOLS
-          </a>
-        </ContactItem>
-        <ContactItem style={{ marginBottom: 20 }}>
-          <a
-            style={{
-              all: "unset",
-              textDecoration: "underline",
-              cursor: "pointer",
-              color: FOURTH_COLOR,
-            }}
-            href="https://www.instagram.com/saint.mary.boulevard/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            @SAINT.MARY.BOULEVARD
-          </a>
-        </ContactItem>
-        <ContactItem>P.IVA 04477820239</ContactItem>
+        <ContactItemWithTag
+          href="tel:+39 342 7636758"
+          label="+39 342 7636758 ALBERTO"
+        />
+        <ContactItemWithTag
+          href="mailto:saintmaryboulevard@gmail.com?subject=Richiesta"
+          label="SAINTMARYBOULEVARD@GMAIL.COM"
+        />
+        <ContactItemWithTag
+          href="https://www.instagram.com/smb.for.schools/"
+          label="@SMB.FOR.SCHOOLS"
+          target="_blank"
+          rel="noreferrer"
+        />
+        <ContactItemWithTag
+          href="https://www.instagram.com/saint.mary.boulevard/"
+          label="@SAINT.MARY.BOULEVARD"
+          target="_blank"
+          rel="noreferrer"
+        />
+        <ContactItem style={{ marginTop: 20 }}>P.IVA 04477820239</ContactItem>
         <ContactItem>SINCE 2015, VERONA</ContactItem>
       </Element>
     </InfoWrapper>
