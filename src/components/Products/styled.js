@@ -17,6 +17,5 @@ export const Title = styled.div`
   font-family: ${FIRST_FONT};
   color: ${FIRST_COLOR};
   font-size: 45px;
-  padding: ${({ isMobile }) => (isMobile ? "0 20px" : "0 50px")};
   margin-bottom: 50px;
 `;

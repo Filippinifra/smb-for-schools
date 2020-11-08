@@ -13,9 +13,9 @@ export const Products = () => {
   const { ref, height } = useStaggered(0.85);
 
   return (
-    <ExternalWrapper>
-      <MaxWidthContent>
-        <Title isMobile={isMobile}>I NOSTRI LAVORI</Title>
+    <ExternalWrapper isMobile={isMobile}>
+      <MaxWidthContent style={{ padding: isMobile ? "0 20px" : "0 50px" }}>
+        <Title>I NOSTRI LAVORI</Title>
         <div style={{ zIndex: 2, height }}>
           <div ref={ref}>
             <img
