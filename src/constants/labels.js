@@ -2,7 +2,7 @@ export const LABELS = {
   whatWeDo:
     "Siamo un brand di abbigliamento streetwear nato a Verona nel 2016. La nostra specialità? Creare capi personalizzati e alla moda. Oltre ad avere uno store online nel quale proponiamo le nostre collezioni da anni collaboriamo con gli istitui di secondo grado per realizzare il loro vestiario d'istituto.",
   graphics:
-    "Tutto ciò che viene stampato sui nostri capi regala un tocco magico al prodotto finale. Ogni grafica è realizzata dalle mani creative e sapienti dei nostri grafici. Le grafiche sono indirizzate dalle richieste dell'istituto e customizzate per regalare una smufatura streetwear.",
+    "Tutto ciò che viene stampato sui nostri capi regala un tocco magico al prodotto finale. Ogni grafica è realizzata dalle mani creative e sapienti dei nostri designer. Le grafiche sono indirizzate dalle richieste dell'istituto e customizzate per regalare una smufatura streetwear.",
   products:
     "Siamo in grado di fare qualsiasi cosa e di qualsiasi colore. Le richieste particolari ci piacciono perchè ci mettono alla prova e siamo fieri di portarle a termine.",
   print1:

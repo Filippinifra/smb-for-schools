@@ -31,7 +31,7 @@ export const Stamp = () => {
             style={{ width: "100%", marginBottom: 50 }}
           />
           <Text style={{ paddingBottom: 50 }} s>
-            {LABELS.print1}
+            {LABELS.print2}
           </Text>
         </MidWrapper>
       </MaxWidthContent>
