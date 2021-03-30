@@ -16,6 +16,7 @@ import { Element } from "react-scroll";
 import { LABELS } from "constants/labels";
 import { MaxWidthContent } from "components/MaxWidthContent";
 import { FOURTH_COLOR } from "constants/palette";
+import { FadeAnimation } from "components/FadeAnimation";
 
 export const About = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
@@ -101,71 +102,76 @@ export const About = () => {
   return (
     <ExternalWrapper>
       <MaxWidthContent>
-        <Title isMobile={isMobile}>ABOUT US</Title>
-        {isTablet ? (
-          <>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginBottom: 40,
-              }}
-            >
-              <div style={{ width: "65%" }}>
-                <Description />
-              </div>
-              <WrapperLogosTablet style={{ width: "35%" }}>
-                <ImagesColumn />
-              </WrapperLogosTablet>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                padding: 20,
-              }}
-            >
-              <CircleInfo />
-            </div>
-          </>
-        ) : (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <div style={{ width: "40%" }}>
-              <Description />
-            </div>
-            <div
-              style={{
-                width: "60%",
-                display: "flex",
-                padding: isMobile ? "0 20px" : "0 50px",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div style={{ width: "25%" }}>
-                <ImagesColumn />
-              </div>
+        <FadeAnimation>
+          <Title isMobile={isMobile}>ABOUT US</Title>
+        </FadeAnimation>
+        <FadeAnimation>
+          {" "}
+          {isTablet ? (
+            <>
               <div
                 style={{
-                  width: "75%",
-                  marginLeft: 40,
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  marginBottom: 40,
+                }}
+              >
+                <div style={{ width: "65%" }}>
+                  <Description />
+                </div>
+                <WrapperLogosTablet style={{ width: "35%" }}>
+                  <ImagesColumn />
+                </WrapperLogosTablet>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: 20,
                 }}
               >
                 <CircleInfo />
               </div>
+            </>
+          ) : (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+              }}
+            >
+              <div style={{ width: "40%" }}>
+                <Description />
+              </div>
+              <div
+                style={{
+                  width: "60%",
+                  display: "flex",
+                  padding: isMobile ? "0 20px" : "0 50px",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <div style={{ width: "25%" }}>
+                  <ImagesColumn />
+                </div>
+                <div
+                  style={{
+                    width: "75%",
+                    marginLeft: 40,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
+                  <CircleInfo />
+                </div>
+              </div>
             </div>
-          </div>
-        )}
+          )}
+        </FadeAnimation>
       </MaxWidthContent>
     </ExternalWrapper>
   );

@@ -6,6 +6,7 @@ import TshirtColorImage from "images/tshirtMultiColor.png";
 import { ExternalWrapper, Title, Text } from "./styled";
 import { useStaggered } from "hooks/useStaggered";
 import { MaxWidthContent } from "components/MaxWidthContent";
+import { FadeAnimation } from "components/FadeAnimation";
 
 export const Colors = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
@@ -15,18 +16,24 @@ export const Colors = () => {
   return (
     <ExternalWrapper>
       <MaxWidthContent>
-        <Title isMobile={isMobile}>PRODOTTI E COLORI</Title>
-        <Text isMobile={isMobile}>{LABELS.products}</Text>
-        <div
-          style={{ width: isMobile ? "100%" : "90%", height, margin: "auto" }}
-        >
-          <img
-            alt="t-shirt-color"
-            src={TshirtColorImage}
-            style={{ width: "100%" }}
-            ref={ref}
-          />
-        </div>
+        <FadeAnimation>
+          <Title isMobile={isMobile}>PRODOTTI E COLORI</Title>
+        </FadeAnimation>
+        <FadeAnimation>
+          <Text isMobile={isMobile}>{LABELS.products}</Text>
+        </FadeAnimation>
+        <FadeAnimation>
+          <div
+            style={{ width: isMobile ? "100%" : "90%", height, margin: "auto" }}
+          >
+            <img
+              alt="t-shirt-color"
+              src={TshirtColorImage}
+              style={{ width: "100%" }}
+              ref={ref}
+            />
+          </div>
+        </FadeAnimation>
       </MaxWidthContent>
     </ExternalWrapper>
   );
