@@ -72,7 +72,7 @@ export const About = () => {
           target="_blank"
           rel="noreferrer"
         />
-        <ContactItem style={{ marginTop: 20 }}>P.IVA 04477820239</ContactItem>
+        <ContactItem style={{ marginTop: 20 }}>P.IVA 04797520238</ContactItem>
         <ContactItem>SINCE 2015, VERONA</ContactItem>
       </Element>
     </InfoWrapper>
