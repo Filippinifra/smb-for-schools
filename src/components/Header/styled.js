@@ -46,6 +46,15 @@ export const MenuItem = styled.div`
       left: 0;
     }
   }
+
+  @media only screen and (max-width: 900px) {
+    padding: 0 10px;
+  }
+
+  @media only screen and (max-width: 650px) {
+    padding: 0 5px;
+    font-size: 10px;
+  }
 `;
 
 export const RightWrapper = styled.div`
