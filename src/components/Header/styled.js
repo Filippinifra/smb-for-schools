@@ -48,12 +48,12 @@ export const MenuItem = styled.div`
   }
 
   @media only screen and (max-width: 900px) {
-    padding: 0 10px;
+    margin: 0 10px;
   }
 
   @media only screen and (max-width: 650px) {
-    padding: 0 5px;
     font-size: 10px;
+    margin: 0 5px;
   }
 `;
 
