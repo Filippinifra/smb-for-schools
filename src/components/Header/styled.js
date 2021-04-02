@@ -14,19 +14,37 @@ export const HeaderWrapper = styled.div`
 export const MenuItem = styled.div`
   font-family: ${FIRST_FONT};
   color: ${FOURTH_COLOR};
-  padding: 0 20px;
-  cursor: pointer;
-
   text-shadow: -1px 0 ${SECOND_COLOR}, 0 1px ${SECOND_COLOR},
     1px 0 ${SECOND_COLOR}, 0 -1px ${SECOND_COLOR};
 
-  @media only screen and (max-width: 900px) {
-    padding: 0 10px;
+  flex: 1 1 auto;
+  margin: 0 20px;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+
+  &:after {
+    position: absolute;
+    transition: 0.3s;
+    content: "";
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #f7f7f7;
+    left: 0;
   }
 
-  @media only screen and (max-width: 650px) {
-    padding: 0 5px;
-    font-size: 10px;
+  &:hover {
+    cursor: pointer;
+
+    &:after {
+      width: 100%;
+      left: 0;
+    }
   }
 `;
 
