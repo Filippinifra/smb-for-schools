@@ -1,16 +1,5 @@
-@import url(//db.onlinewebfonts.com/c/1d65b5646a9a805c62b037be6dd3a0a7?family=Cubano);
-
 @font-face {
   font-family: "Cubano";
-  src: url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.eot");
-  src: url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/1d65b5646a9a805c62b037be6dd3a0a7.svg#Cubano")
-      format("svg");
+  src: local("Cubano"), url("./Cubano.ttf") format("truetype");
+  font-weight: normal;
 }
