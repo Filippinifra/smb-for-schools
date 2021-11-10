@@ -36,7 +36,7 @@ export const Header = () => {
           <SubTitle>FOR SCHOOLS</SubTitle>
         </div>
         <RightWrapper>
-          {false && <MenuItem onClick={() => window.open("https://www.smbforschools-shop.com/")}>SHOP</MenuItem>}
+          <MenuItem onClick={() => window.open("https://www.smbforschools-shop.com/")}>SHOP</MenuItem>
           <MenuItem onClick={() => handleMenuClick("whatWeDo")}>COSA FACCIAMO</MenuItem>
           <MenuItem onClick={() => handleMenuClick("products")}>I NOSTRI LAVORI</MenuItem>
           <MenuItem onClick={() => handleMenuClick("about")}>ABOUT US</MenuItem>
